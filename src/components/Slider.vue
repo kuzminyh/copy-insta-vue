@@ -13,15 +13,15 @@
      data(){
        return {
          currentPhoto : '',  
-       i : ''  
+       i : 0  
        }
        
      },
      methods: {
        next() {
-        var j = this.i++
-        console.log('j',j)
-        this.currentPhoto  = this.photos[j] 
+        //var j = this.i++
+       // console.log('j',j)
+        this.currentPhoto  = this.photos[this.i++] 
        },
        prev() {
         var j = this.i--
@@ -29,7 +29,8 @@
        }    
      },
      created() {
-         this.i=0
+         this.i=1
+        console.log(this.i)
          this.currentPhoto  = this.photos[0]
      }
      

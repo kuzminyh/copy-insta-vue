@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view ></router-view>
     <div class="header">
       <div class="container">
         <div class="header__row">

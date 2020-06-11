@@ -3,10 +3,10 @@
          <div class="post__header">
           <div class="post__user">
             <div class="user">
-              <a href="#" class="user__avatar">
+              <router-link :to="`/post/${data.id}/edit`" class="user__avatar">
                 <img :src="data.user.ava" alt />   //двоеточие означает что данные надо взять с java scripta
-              </a>
-              <a href="#" class="user__name">{{ data.user.name }} {{ data.user.sername }}</a>
+              </router-link>
+              <router-link :to="`/post/${data.id}/edit`" class="user__name">{{ data.user.name }} {{ data.user.sername }}</router-link>
             </div>
           </div>
 
